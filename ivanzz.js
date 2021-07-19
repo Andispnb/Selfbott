@@ -696,8 +696,8 @@ case 'play': case 'ytplay': case 'ytmp3':
  reply(mess.wait)
  ytsnya = await yts(q);
 res = ytsnya.all;
-anu = await dl.yta(res.hasil[0].audio)
-vanz.sendFile(from, anu, 'play.mp3', vnz)
+anu  = await dl.yta(res[0].url)
+vanz.sendFile(from, anu.hasil[0].audio, 'play.mp3', vnz)
 break
 case 'video': case 'playmp4': 
  ytsnya = await yts(q);
